@@ -27,7 +27,7 @@ requirements:
     - hatchling
   run:
     - python  >=${{ python_min }}
-    - gradio
+    - gradio >=6.3.0,<7.0.0
     - huggingface_hub
     - numpy
     - orjson >=3.0,<4
@@ -36,6 +36,8 @@ requirements:
     - plotly >=6.0,<7
     - pydub <1.0
     - authlib
+    - audioop-lts
+    - setuptools
     - tomli >=2.0.0
 
 tests:
