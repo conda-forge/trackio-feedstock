@@ -18,7 +18,7 @@ build:
   python:
     entry_points:
       - trackio = trackio.cli:main
-  number: 0
+  number: 1
 
 requirements:
   host:
