@@ -41,6 +41,8 @@ requirements:
     - tomli >=2.0.0
 
 tests:
+  - script:
+      - trackio --help
   - python:
       python_version: ${{ python_min }}.*
       pip_check: true
