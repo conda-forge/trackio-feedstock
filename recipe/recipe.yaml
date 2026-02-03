@@ -39,6 +39,7 @@ requirements:
     - audioop-lts
     - setuptools
     - tomli >=2.0.0
+    - nvidia-ml-py >=12.0.0
 
 tests:
   - script:
