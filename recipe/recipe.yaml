@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: trackio
-  version: "0.15.0"
+  version: "0.17.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://github.com/gradio-app/trackio/archive/refs/tags/trackio@${{ version }}.tar.gz
-  sha256: 747fa25346047345074a2cc8c49a3bf15f6a10f26668289804168fa777c0f2d3
+  sha256: 630b14421dac076f441b4908582bcf05561e0564d964e3665d9ede3c1185a79b
 
 build:
   noarch: python
@@ -18,7 +18,7 @@ build:
   python:
     entry_points:
       - trackio = trackio.cli:main
-  number: 2
+  number: 0
 
 requirements:
   host:
@@ -27,19 +27,20 @@ requirements:
     - hatchling
   run:
     - python  >=${{ python_min }}
-    - gradio >=6.3.0,<7.0.0
-    - huggingface_hub
-    - numpy
-    - orjson >=3.0,<4
-    - pandas <3.0
-    - pillow <12.0
-    - plotly >=6.0,<7
-    - pydub <1.0
-    - authlib
-    - audioop-lts
-    - setuptools
+    - gradio >=6.6.0,<7.0.0
+    - huggingface_hub <2.0.0
+    - numpy <3.0.0
+    - orjson >=3.0,<4.0.0
+    - pandas <3.0.0
+    - pillow <12.0.0
+    - plotly >=6.0.0,<7.0.0
+    - pydub <1.0.0
     - tomli >=2.0.0
+  run_constrained:
+    - tbparse ==0.0.9
+    - tensorboardx >=2.0.0,<3.0.0
     - nvidia-ml-py >=12.0.0
+    - pyarrow >=21.0
 
 tests:
   - script:
