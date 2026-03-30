@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: trackio
-  version: "0.19.0"
+  version: "0.20.1"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://github.com/gradio-app/trackio/archive/refs/tags/trackio@${{ version }}.tar.gz
-  sha256: 613b06a05e0ba0ef7410f634da5083f915d27cc88416488e8e23e6a5842b8dbf
+  sha256: 20debd60dd47e6a084bfca5752b85d62471edb13e2613a4f8504a306649b7cde
 
 build:
   noarch: python
@@ -25,11 +25,12 @@ requirements:
     - python  ${{ python_min }}.*
     - pip
     - hatchling
+    - nodejs
   run:
     - python  >=${{ python_min }}
     - pandas <3.0.0
     - huggingface_hub <2.0.0
-    - gradio >=6.8.0,<7.0.0
+    - gradio >=6.10.0,<7.0.0
     - numpy <3.0.0
     - pillow <12.0.0
     - orjson >=3.0,<4.0.0
