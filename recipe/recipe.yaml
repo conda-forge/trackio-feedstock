@@ -25,6 +25,7 @@ requirements:
     - python  ${{ python_min }}.*
     - pip
     - hatchling
+    - nodejs
   run:
     - python  >=${{ python_min }}
     - pandas <3.0.0
