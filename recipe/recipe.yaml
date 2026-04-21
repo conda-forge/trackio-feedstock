@@ -38,6 +38,7 @@ requirements:
     - orjson >=3.0,<4.0.0
     - pydub <1.0.0
     - audioop-lts
+    - tomli
   run_constraints:
     - tbparse ==0.0.9
     - tensorboardx >=2.0.0,<3.0.0
