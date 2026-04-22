@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: trackio
-  version: "0.24.1"
+  version: "0.24.2"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://github.com/gradio-app/trackio/archive/refs/tags/trackio@${{ version }}.tar.gz
-  sha256: 51ea92bdc1da720522f3d0b5e52452d8265d809a6daaafd6ab3a062c94b36215
+  sha256: 08e28dc4b4ceaaa0b7f5feb73e4e9d7ca1729a8d20cb1a5833f6d22555d1560c
 
 build:
   noarch: python
@@ -36,7 +36,6 @@ requirements:
     - numpy <3.0.0
     - pillow <13.0.0
     - orjson >=3.0,<4.0.0
-    - pydub <1.0.0
     - audioop-lts
     - tomli
   run_constraints:
