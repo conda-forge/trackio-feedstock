@@ -37,7 +37,7 @@ requirements:
     - pillow <13.0.0
     - orjson >=3.0,<4.0.0
     - audioop-lts
-    - brotli >=1.0.0,<2.0.0
+    - brotli-python >=1.0.0,<2.0.0
     - tomli >=2.0.0
   run_constraints:
     - tbparse ==0.0.9
