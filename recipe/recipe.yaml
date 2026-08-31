@@ -51,7 +51,9 @@ tests:
   - script:
       - trackio --help
   - python:
-      python_version: ${{ python_min }}.*
+      python_version:
+        - ${{ python_min }}.*
+        - "*"
       pip_check: true
       imports:
         - trackio
