@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: trackio
-  version: "0.42.0"
+  version: "0.44.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://github.com/gradio-app/trackio/archive/refs/tags/trackio@${{ version }}.tar.gz
-  sha256: 7b7054f09a6cbec5986c7dd359f35cf68dc8c9f1ae1b88f983362d7ce6ef428f
+  sha256: 041f556f328b14a9ede47209ea73968de2098c59bba6a9f25406d07fef3c4457
 
 build:
   noarch: python
@@ -28,23 +28,23 @@ requirements:
     - nodejs
   run:
     - python  >=${{ python_min }}
-    - huggingface_hub <2.0.0
+    - huggingface_hub <3.0.0
     - gradio-client >=2.0.0,<3.0.0
     - starlette <2.0.0
     - python-multipart >=0.0.9,<1.0.0
     - uvicorn >=0.30.0,<1.0.0
     - numpy <3.0.0
-    - pillow <13.0.0
+    - pillow <14.0.0
     - orjson >=3.0,<4.0.0
     - audioop-lts
-    - brotli-python >=1.0.0,<2.0.0
+    - brotli-python >=1.2.1,<2.0.0
     - tomli >=2.0.0
   run_constraints:
     - tbparse ==0.0.9
     - tensorboardx >=2.0.0,<3.0.0
     - nvidia-ml-py >=12.0.0
     - pyarrow >=21.0
-    - mcp >=1.0.0,<2.0.0
+    - mcp >=1.30.0,<3.0.0
     - psutil >=5.9.0
 
 tests:
