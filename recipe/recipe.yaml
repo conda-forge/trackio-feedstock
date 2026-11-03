@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: trackio
-  version: "0.44.0"
+  version: "0.45.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://github.com/gradio-app/trackio/archive/refs/tags/trackio@${{ version }}.tar.gz
-  sha256: 041f556f328b14a9ede47209ea73968de2098c59bba6a9f25406d07fef3c4457
+  sha256: 843d9be741a299246313cc4288049538bec8dff8e74cc486bcb8e31b0ef760df
 
 build:
   noarch: python
